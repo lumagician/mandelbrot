@@ -24,9 +24,9 @@ def mandelbrot(Re, Im, max_iter):
 
 
 
-columns=2000
+columns=20000
 
-rows=2000
+rows=20000
 
 
 
