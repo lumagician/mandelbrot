@@ -2,7 +2,10 @@ import numpy
 
 import matplotlib.pyplot as plt
 
+import time
 
+
+start = time.time()
 
 def mandelbrot(Re, Im, max_iter):
 
@@ -24,9 +27,9 @@ def mandelbrot(Re, Im, max_iter):
 
 
 
-columns=20000
+columns=2000
 
-rows=20000
+rows=2000
 
 
 
@@ -48,4 +51,7 @@ plt.xlabel('Re')
 
 plt.ylabel('Im')
 
-plt.savefig('foo.png')
+end = time.time()
+print(end - start)
+
+plt.show()
